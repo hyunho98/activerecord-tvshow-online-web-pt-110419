@@ -12,4 +12,12 @@
 
 ActiveRecord::Schema.define(version: 2020_02_14_073900) do
 
+  create_table "shows", force: :cascade do |t|
+    t.string "name"
+    t.string "network"
+    t.string "day"
+    t.integer "rating"
+    t.string "season"
+  end
+
 end
